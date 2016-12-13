@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <style>
+    /* This helps the ng-show/ng-hide animations start at the right place. */
+    /* Since Angular has this but needs to load, this gives us the class early. */
+   .overflow-hidden {
+      overflow: hidden;
+   }
+   .overflow-visible {
+    overflow: visible;
+   }
+    .ng-hide {
+      display: none!important;
+    }
+    ::-webkit-scrollbar { 
+      width: 8px; 
+    } /* Track */ 
+    ::-webkit-scrollbar-track { 
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+      -webkit-border-radius: 10px; border-radius: 10px; 
+    } /* Handle */ 
+    ::-webkit-scrollbar-thumb { 
+      -webkit-border-radius: 10px; border-radius: 10px; background: rgba(247,246,246,0.8); 
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    } 
+    ::-webkit-scrollbar-thumb:window-inactive { 
+      background: rgba(255,0,0,0.4); 
+    } 
+  </style>
+  <title ng-bind="title">
+    Cardset app
+  </title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <base href="/">
+
+  <link rel="stylesheet" href="styles/lib-08172bd4e6.css">
+
+  <link rel="stylesheet" href="styles/app-7624b6d49b.css">
+</head>
+
+<body>
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <div>
+    <div ng-include="'app/layout/layout.html'"></div>
+    <div ng-show="showSplash">
+      <div class="loading"></div>
+    </div>
+  </div>
+  
+  <script src="js/lib-ed79d01a82.js"></script>
+
+  <script src="js/app-f1aa96c0ce.js"></script>
+</body>
+
+</html>

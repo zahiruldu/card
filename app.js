@@ -24,7 +24,7 @@ switch (environment) {
     app.use(express.static(path.join(__dirname, "/")));
 
 	// Any deep link calls should return index.html
-	app.use('/*', express.static(path.join(__dirname, "src/index.html")));
+	app.use('/*', express.static(path.join(__dirname, "index.html")));
     break;
   default:
   	console.log('development');

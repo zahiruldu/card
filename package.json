@@ -1,29 +1,29 @@
 {
-  "name": "card",
+  "name": "Cardset app",
   "version": "1.0.0",
-  "description": "Cardset manager",
+  "description": "Demo application for card manager",
   "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/zahiruldu/card.git"
+    "url": ""
   },
   "keywords": [
-    "cardset",
-    "manager",
-    "acrd"
+    "card"
+  
   ],
   "author": "Md. Zahirul Haque",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zahiruldu/card/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/zahiruldu/card#readme",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "morgan": "^1.7.0"
-  }
+  "homepage": "https://pure-temple-91711.herokuapp.com"
 }
